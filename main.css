@@ -1,0 +1,53 @@
+body{
+    color: black;
+    margin: 0;
+}
+
+main{
+    padding: 0em 6em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+menu a{
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color:#507600;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
+.Profile{
+    display: flex;
+}
+
+.citate{
+    background-color: #DADADA;
+    padding: .5em 2em;
+    font-family: 'Kadwa', serif;
+    font-family: 'Kalam', italic;
+    border-radius: 2em;
+}
+
+.Citate_name{
+    text-align: right;
+}
