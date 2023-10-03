@@ -7,6 +7,10 @@ main{
     padding: 0em 6em;
 }
 
+li{
+    display: block;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -23,15 +27,19 @@ section{
 
 menu a{
     color: white;
-    padding: 2em;
-
-}
-
-menu a{
     border: white solid;
     border-width: 2px;
     padding: 1em;
     margin: 2em;
+    border-radius: 2em;
+    transition-duration: 0.2s;
+}
+
+menu a:hover{
+    background-color: white;
+    transition-duration: 0.2s;
+    color: #507600;
+    border-width: 20px;
 }
 
 h1{
