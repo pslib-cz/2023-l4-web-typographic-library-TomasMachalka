@@ -17,8 +17,21 @@ menu{
     justify-content: center;
 }
 
+section{
+    padding: 2em;
+}
+
 menu a{
     color: white;
+    padding: 2em;
+
+}
+
+menu a{
+    border: white solid;
+    border-width: 2px;
+    padding: 1em;
+    margin: 2em;
 }
 
 h1{
@@ -34,10 +47,12 @@ header{
 }
 
 
-
-
 .Profile{
     display: flex;
+}
+
+.Profile img{
+    width: 15em
 }
 
 .citate{
@@ -50,4 +65,9 @@ header{
 
 .Citate_name{
     text-align: right;
+}
+
+.other_item {
+    border: #507600;
+    border-radius: 2em;
 }
