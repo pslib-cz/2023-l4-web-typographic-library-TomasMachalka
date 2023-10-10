@@ -2,7 +2,7 @@
 # Typography CSS library
 **Author:** *First Lastname*
 ## Demo site
-Link to **[demo](http://www.github.io)** site for preview.
+Link to **[demo](https://tomasmachalka.github.io/2023-l4-web-typographic-library-TomasMachalka-master/)** site for preview.
 ## Dependecies
 ...
 ## Implementation

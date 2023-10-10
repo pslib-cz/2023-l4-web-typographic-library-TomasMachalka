@@ -1,10 +1,10 @@
+html{
+    font-family: 'Kadwa', serif;
+}
+
 body{
     color: black;
     margin: 0;
-}
-
-main{
-    padding: 0em 6em;
 }
 
 li{
@@ -21,11 +21,11 @@ menu{
     justify-content: center;
 }
 
-section{
-    padding: 2em;
+img{
+    width: 100%;
 }
 
-menu a{
+.Button{
     color: white;
     border: white solid;
     border-width: 2px;
@@ -35,7 +35,7 @@ menu a{
     transition-duration: 0.2s;
 }
 
-menu a:hover{
+.Button:hover{
     background-color: white;
     transition-duration: 0.2s;
     color: #507600;
@@ -50,13 +50,24 @@ header{
     background-color:#507600;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    padding: 0em 2em;
     align-items: center;
 }
 
+section{
+    padding: 2em;
+}
 
 .Profile{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Profile_caption{
+    align-items: center;
+    padding: 0em;
+    text-align: center;
 }
 
 .Profile img{
@@ -66,7 +77,6 @@ header{
 .citate{
     background-color: #DADADA;
     padding: .5em 2em;
-    font-family: 'Kadwa', serif;
     font-family: 'Kalam', italic;
     border-radius: 2em;
 }
@@ -75,7 +85,98 @@ header{
     text-align: right;
 }
 
-.other_item {
-    border: #507600;
+
+/*Gallery*/
+
+.main-image {
+    max-width: 80%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    margin: 20px;
+}
+
+/* Selektor pro všechny obrázky v galerii */
+.thumbnail-images img {
+    max-width: 10%;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail {
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/*Other Profile section*/
+
+.other{
+    gap: 1em;
     border-radius: 2em;
+    padding: 0em;
+}
+
+.other_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 2em;
+    transition: box-shadow 0.2s ease-in-out;
+    border: #507600 solid;
+}
+
+.other_item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.other_item_description{
+    font-family: 'Kalam', italic;
+}
+
+footer{
+    background-color: #507600;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    main{
+        padding: 0em 6em;
+    }
+
+    .Profile{
+        flex-direction: row;
+    }
+
+    .Profile_caption{
+        text-align: left;
+        padding: 2em;
+    }
+
+    section{
+        padding: 6em;
+    }
+
+    .other{
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+    }
 }
