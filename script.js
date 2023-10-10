@@ -1,6 +1,6 @@
-// script.js
+
 const mainImg = document.getElementById('mainImg');
-const thumbnails = document.querySelectorAll('.thumbnail');
+const thumbnails = document.querySelectorAll('.gallery_thumbnails_image');
 
 thumbnails.forEach((thumbnail) => {
     thumbnail.addEventListener('click', () => {
@@ -10,19 +10,19 @@ thumbnails.forEach((thumbnail) => {
 });
 
 
-
-document.getElementById('downloadCSSLink').addEventListener('click', (event) => {
+document.getElementById('downloadProfileCSSLink').addEventListener('click', (event) => {
     // Zastavte standardní chování odkazu (navigaci na jinou stránku)
     event.preventDefault();
-
-    // Získejte odkaz na CSS soubor
-    const cssFileURL = './main.css'; // Změňte URL na správnou cestu k vašemu CSS souboru
-
-    // Vytvořte odkaz na stažení
+    
+    // Simulujte kliknutí na odkaz pro stažení
     const downloadLink = document.createElement('a');
-    downloadLink.href = cssFileURL;
-    downloadLink.download = 'styles.css'; // Název staženého souboru
-
-    // Simulujte kliknutí na odkaz
+    downloadLink.href = './profile_library.css'; // URL k souboru profile_library.css
+    downloadLink.download = 'profile_library.css'; // Název staženého souboru
+    downloadLink.style.display = 'none'; // Skryjte odkaz
+    
+    document.body.appendChild(downloadLink);
+    
     downloadLink.click();
+    
+    document.body.removeChild(downloadLink);
 });

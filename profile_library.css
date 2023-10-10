@@ -1,33 +1,12 @@
-html{
-    font-family: 'Kadwa', serif;
-}
 
-body{
-    color: black;
-    margin: 0;
-}
 
-li{
-    display: block;
-}
 
-a{
-    text-decoration: none;
-    color: black;
-}
-menu{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
 
-img{
-    width: 100%;
-}
-
-.Button{
+/*Navigation*/
+.page{
     color: white;
     border: white solid;
+    background-color: #507600;
     border-width: 2px;
     padding: 1em;
     margin: 2em;
@@ -35,45 +14,53 @@ img{
     transition-duration: 0.2s;
 }
 
-.Button:hover{
+.page:hover{
     background-color: white;
     transition-duration: 0.2s;
     color: #507600;
     border-width: 20px;
 }
 
-h1{
-    text-align: center;
+
+
+
+/*Buttons*/
+.button1{
+    color: black;
+    border: black solid;
+    background-color: #507600;
+    border-width: 1px;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 2em;
+    transition-duration: 0.2s;
 }
 
-header{
-    background-color:#507600;
-    display: flex;
-    justify-content: space-between;
-    padding: 0em 2em;
-    align-items: center;
+.button1:hover{
+    background-color: white;
+    border-color: #507600;
+    transition-duration: 0.2s;
+
 }
 
-section{
-    padding: 2em;
+
+
+.button2{
+    color: white;
+    border: black solid;
+    background-color: black;
+    border-width: 2px;
+    padding: 0em 1em;
+    border-radius: 5em;
+    transition-duration: 0.2s;
 }
 
-.Profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.button2:hover{
+    transition-duration: 0.2s;
+    border-width: 20px;
 }
 
-.Profile_caption{
-    align-items: center;
-    padding: 0em;
-    text-align: center;
-}
-
-.Profile img{
-    width: 15em
-}
-
+/*Citate text*/
 .citate{
     background-color: #DADADA;
     padding: .5em 2em;
@@ -81,49 +68,42 @@ section{
     border-radius: 2em;
 }
 
-.Citate_name{
+.citate_name{
     text-align: right;
 }
 
 
+
 /*Gallery*/
-
-.main-image {
-    max-width: 80%;
-}
-
 .gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-image {
+.gallery_main-image {
+    max-width: 100%;
     margin: 20px;
 }
 
-/* Selektor pro všechny obrázky v galerii */
-.thumbnail-images img {
-    max-width: 10%;
-}
-
-.thumbnail-images {
+.gallery_thumbnails {
     display: flex;
     justify-content: center;
 }
 
-.thumbnail {
-    margin: 5px;
+.gallery_thumbnails_image {
+    margin: 0.3em;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    max-width: 10%;
 }
 
-.thumbnail:hover {
+.gallery_thumbnails_image:hover {
     transform: scale(1.1);
 }
 
-/*Other Profile section*/
 
+/*Other Profile part*/
 .other{
     gap: 1em;
     border-radius: 2em;
@@ -147,32 +127,19 @@ section{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.other_item_description{
-    font-family: 'Kalam', italic;
-}
-
-footer{
-    background-color: #507600;
-    display: flex;
-    justify-content: center;
-}
-
 @media (min-width: 768px) {
-    main{
-        padding: 0em 6em;
-    }
 
-    .Profile{
+    .profile{
         flex-direction: row;
     }
 
-    .Profile_caption{
+    .profile_caption{
         text-align: left;
         padding: 2em;
     }
 
-    section{
-        padding: 6em;
+    .gallery_main-image{
+        max-width: 80%;
     }
 
     .other{

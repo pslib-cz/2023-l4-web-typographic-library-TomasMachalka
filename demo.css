@@ -1,0 +1,81 @@
+html{
+    font-family: 'Kadwa', serif;
+}
+
+body{
+    color: black;
+    margin: 0;
+}
+
+li{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color:#507600;
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 2em;
+    align-items: center;
+}
+
+section{
+    padding: 0.5em;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_caption{
+    align-items: center;
+    padding: 0em;
+    text-align: center;
+}
+
+.profile img{
+    width: 15em
+}
+
+
+.other_item_description{
+    font-family: 'Kalam', italic;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+
+    main{
+        padding: 0em 6em;
+    }
+
+    section{
+        padding: 6em;
+    }
+
+}
