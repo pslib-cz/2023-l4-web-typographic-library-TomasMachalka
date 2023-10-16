@@ -40,7 +40,7 @@ Check the colors in  `:root`
 Profile is the main part of the page. It consists of two parts: Profile picture and description. Profile picture should be in square ratio but it can be different. 
 ```html
 <div class="profile">
-                <img class="profile_image" src="./imgs/blank-profile-picture-973460_1280.png" alt="profile image">
+                <img class="profile_image" src="Your profile picture" alt="profile image">
                 <div class="profile_caption">
                     <h2>Profile name</h2>
                     <ul>
@@ -58,20 +58,20 @@ For this case there are two classes: `.citate` and for a name beyond `.citate_na
 In demo site are 3 buttons: Button 1, Button 2 and Button 3. Button 3 is more visible in the navigation.
 To create a button add class: `.button1`, `.button2` or `.page` on tag `<a>`.
 ## Gallery
-For gallery implementation use this HTML template:
+For gallery implementation add Gallery part from my javascript file and use this HTML template:
 ```html
             <h1>Gallery</h1>
                 <div class="gallery">
                     <div class="gallery_main-image">
-                        <img id="mainImg" src="./imgs/gallery/Designblok.jpg" alt="Hlavní obrázek">
+                        <img id="mainImg" src="Your image 1" alt="Hlavní obrázek">
                     </div>
                     <div class="gallery_thumbnails">
-                        <img class="gallery_thumbnails_image" src="./imgs/gallery/Designblok.jpg" alt="Miniatura 1">
-                        <img class="gallery_thumbnails_image" src="./imgs/gallery/hezký_věci.jpg" alt="Miniatura 2">
-                        <img class="gallery_thumbnails_image" src="./imgs/gallery/Sklo.jpg" alt="Miniatura 3">
-                        <img class="gallery_thumbnails_image" src="./imgs/gallery/stool.jpg" alt="Miniatura 4">
-                        <img class="gallery_thumbnails_image" src="./imgs/gallery/Duna.jpg" alt="Miniatura 5">
-                        <img class="gallery_thumbnails_image" src="./imgs/gallery/židle.jpg" alt="Miniatura 6">
+                        <img class="gallery_thumbnails_image" src="Your img 1" alt="Thumbnail 1">
+                        <img class="gallery_thumbnails_image" src="Your img 2" alt="Thumbnail 2">
+                        <img class="gallery_thumbnails_image" src="Your img 3" alt="Thumbnail 3">
+                        <img class="gallery_thumbnails_image" src="Your img 4" alt="Thumbnail 4">
+                        <img class="gallery_thumbnails_image" src="Your img 5" alt="Thumbnail 5">
+                        <img class="gallery_thumbnails_image" src="Your img 6" alt="Thumbnail 6">
                     </div>
                 </div>
                 <script src="script.js"></script>
@@ -82,8 +82,8 @@ Here is the way how to create one:
 ```html
 <a class="other_item" href="#">
                 <article>
-                    <div><img src="./imgs/Otherprofile_pic.png" alt="#"></div>
-                    <h3>Other name</h3>
+                    <div><img src="Profile picture" alt="#"></div>
+                    <h3>Other profile name</h3>
                     <p class="other_item_description">
                         Short description of this profile. Profile should be somehow related to the main profile.
                     </p>
