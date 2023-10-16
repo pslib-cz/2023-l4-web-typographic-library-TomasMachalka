@@ -5,6 +5,13 @@
 Link to **[demo](https://pslib-cz.github.io/2023-l4-web-typographic-library-TomasMachalka/)** site for preview.
 ## Description
 This CSS library is designed with a focus on creating web profiles for individuals, making it an ideal choice for building portfolios, personal profiles sites where visually appealing user profiles are important. This library offers an elegant and responsive design that allows for the presentation of content in a user-friendly and modern format. It includes styles for displaying user information, gallery, portfolios, and other profiles cards, making it easy to create attractive and interactive profiles. With this library, you can quickly and easily create web pages that stand out with their visual design and enable users to efficiently share their portfolios and content reviews.
+## Library Content
+1. [Implemantation](#Implementation)
+2. [Fonts](#Fonts)
+3. [Colors](#Colors)
+4. [Header](#Header)
+5. [Profile](#Profile)
+
 ## Implementation
 1) Open demo
 2) Scroll down
@@ -12,7 +19,7 @@ This CSS library is designed with a focus on creating web profiles for individua
 4) Link CSS file to your HTML files
 5) If you want to use my Gallery format, download script.js and copy "Gallery part"
 ## Fonts
-CSS library uses two fonts. Kadwa as primary and Kalam as secundary font for descriptions of profiles and citations.
+CSS library uses two fonts. [Kadwa](https://fonts.google.com/specimen/Kadwa) as primary and [Kalam](https://fonts.google.com/specimen/Kalam) as secundary font for descriptions of profiles and citations.
 ## Colors
 The Library uses 4 colors.
 Green colors sets the main visual of the site. Grey color is presented in borders and cards.
@@ -25,6 +32,46 @@ Check the colors in  `:root`
     --white: #ffffff;
     --grey: #dadada;
 }
+```
+## Header
+## Profile
+There are also 2 types of text. Text using Kadwa font is implemented for normal text on your website. The other option (Kalam) should be used for citations.
+For this case there are two classes: `.citate` and for a name beyond `.citate_name`.
+## Buttons
+In demo site are 3 buttons: Button 1, Button 2 and Button 3. Button 3 is more visible in the navigation.
+To create a button add class: `.button1`, `.button2` or `.page`.
+## Gallery
+For gallery implementation use this HTML template:
+```html
+            <h1>Gallery</h1>
+                <div class="gallery">
+                    <div class="gallery_main-image">
+                        <img id="mainImg" src="./imgs/gallery/Designblok.jpg" alt="Hlavní obrázek">
+                    </div>
+                    <div class="gallery_thumbnails">
+                        <img class="gallery_thumbnails_image" src="./imgs/gallery/Designblok.jpg" alt="Miniatura 1">
+                        <img class="gallery_thumbnails_image" src="./imgs/gallery/hezký_věci.jpg" alt="Miniatura 2">
+                        <img class="gallery_thumbnails_image" src="./imgs/gallery/Sklo.jpg" alt="Miniatura 3">
+                        <img class="gallery_thumbnails_image" src="./imgs/gallery/stool.jpg" alt="Miniatura 4">
+                        <img class="gallery_thumbnails_image" src="./imgs/gallery/Duna.jpg" alt="Miniatura 5">
+                        <img class="gallery_thumbnails_image" src="./imgs/gallery/židle.jpg" alt="Miniatura 6">
+                    </div>
+                </div>
+                <script src="script.js"></script>
+```
+## Other profile card
+As was mentioned in the description, this CSS library is created for Profile presentation. Other profile card can help to present other interesting profile or site.
+Here is the way how to create one:
+```html
+<a class="other_item" href="#">
+                <article>
+                    <div><img src="./imgs/Otherprofile_pic.png" alt="#"></div>
+                    <h3>Other name</h3>
+                    <p class="other_item_description">
+                        Short description of this profile. Profile should be somehow related to the main profile.
+                    </p>
+                </article>
+            </a>
 ```
 ### First
 ### Second
