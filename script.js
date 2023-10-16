@@ -1,4 +1,4 @@
-
+/*Gallery part for copy*/
 const mainImg = document.getElementById('mainImg');
 const thumbnails = document.querySelectorAll('.gallery_thumbnails_image');
 
@@ -9,9 +9,8 @@ thumbnails.forEach((thumbnail) => {
     });
 });
 
-
+/*Download button*/
 document.getElementById('downloadProfileCSSLink').addEventListener('click', (event) => {
-    // Zastavte standardní chování odkazu (navigaci na jinou stránku)
     event.preventDefault();
     
     // Simulujte kliknutí na odkaz pro stažení
