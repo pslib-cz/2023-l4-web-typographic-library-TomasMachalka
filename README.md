@@ -13,7 +13,7 @@ This CSS library is designed with a focus on creating web profiles for individua
 5. [Profile](#Profile)
 6. [Buttons](#Buttons)
 7. [Gallery](#Gallery)
-8. [Other profile card](#Other profile card)
+8. [Other profile card](#Other-profile-card)
 
 ## Implementation
 1) Open demo
