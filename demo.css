@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    color: black;
+    color: var(--black);
     margin: 0;
 }
 
@@ -12,7 +12,7 @@ section{
 }
 
 footer{
-    background-color: black;
+    background-color: var(--black);
     display: flex;
     justify-content: center;
 }
