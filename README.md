@@ -11,6 +11,9 @@ This CSS library is designed with a focus on creating web profiles for individua
 3. [Colors](#Colors)
 4. [Header](#Header)
 5. [Profile](#Profile)
+6. [Buttons](#Buttons)
+7. [Gallery](#Gallery)
+8. [Other profile card](#Other_profile_card)
 
 ## Implementation
 1) Open demo
@@ -33,13 +36,27 @@ Check the colors in  `:root`
     --grey: #dadada;
 }
 ```
-## Header
 ## Profile
+Profile is the main part of the page. It consists of two parts: Profile picture and description. Profile picture should be in square ratio but it can be different. 
+```html
+<div class="profile">
+                <img class="profile_image" src="./imgs/blank-profile-picture-973460_1280.png" alt="profile image">
+                <div class="profile_caption">
+                    <h2>Profile name</h2>
+                    <ul>
+                        <li>Property</li>
+                        <li>Property</li>
+                        <li>Property</li>
+                        <li>Property</li>
+                    </ul>
+                </div>
+</div>
+```
 There are also 2 types of text. Text using Kadwa font is implemented for normal text on your website. The other option (Kalam) should be used for citations.
 For this case there are two classes: `.citate` and for a name beyond `.citate_name`.
 ## Buttons
 In demo site are 3 buttons: Button 1, Button 2 and Button 3. Button 3 is more visible in the navigation.
-To create a button add class: `.button1`, `.button2` or `.page`.
+To create a button add class: `.button1`, `.button2` or `.page` on tag `<a>`.
 ## Gallery
 For gallery implementation use this HTML template:
 ```html
@@ -73,5 +90,4 @@ Here is the way how to create one:
                 </article>
             </a>
 ```
-### First
-### Second
+
