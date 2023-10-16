@@ -10,8 +10,10 @@ This CSS library is designed with a focus on creating web profiles for individua
 2) Scroll down
 3) Click on Download Profile_library.CSS
 4) Link CSS file to your HTML files
+5) If you want to use my Gallery format, download script.js and copy "Gallery part"
 ## Fonts
-CSS library uses two fonts. 
+CSS library uses two fonts. Kadwa as primary and Kalam as secundary font for descriptions of profiles and citations.
 ## Components
+
 ### First
 ### Second
