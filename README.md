@@ -88,6 +88,6 @@ Here is the way how to create one:
                         Short description of this profile. Profile should be somehow related to the main profile.
                     </p>
                 </article>
-            </a>
+</a>
 ```
 
