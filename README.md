@@ -8,12 +8,23 @@ This CSS library is designed with a focus on creating web profiles for individua
 ## Implementation
 1) Open demo
 2) Scroll down
-3) Click on Download Profile_library.CSS
+3) Click on "Download Profile_library.CSS"
 4) Link CSS file to your HTML files
 5) If you want to use my Gallery format, download script.js and copy "Gallery part"
 ## Fonts
 CSS library uses two fonts. Kadwa as primary and Kalam as secundary font for descriptions of profiles and citations.
-## Components
-
+## Colors
+The Library uses 4 colors.
+Green colors sets the main visual of the site. Grey color is presented in borders and cards.
+Black and white are used for text and complete background.
+Check the colors in  `:root`
+```html
+:root{
+    --black: #000000;
+    --green: #507600;
+    --white: #ffffff;
+    --grey: #dadada;
+}
+```
 ### First
 ### Second
