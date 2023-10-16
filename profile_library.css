@@ -1,7 +1,3 @@
-
-
-
-
 /*Navigation*/
 .page{
     color: white;
@@ -22,6 +18,54 @@
 }
 
 
+/*Profile part*/
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_caption{
+    align-items: center;
+    padding: 0em;
+    text-align: center;
+}
+
+.profile img{
+    width: 15em
+}
+
+
+/*tags*/
+li{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color:#507600;
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 2em;
+    align-items: center;
+}
 
 
 /*Buttons*/
@@ -42,8 +86,6 @@
     transition-duration: 0.2s;
 
 }
-
-
 
 .button2{
     color: white;
@@ -71,7 +113,6 @@
 .citate_name{
     text-align: right;
 }
-
 
 
 /*Gallery*/
@@ -126,6 +167,15 @@
 .other_item:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.other_item img{
+    width: 7em;
+}
+
+.other_item_description{
+    font-family: 'Kalam', italic;
+}
+
 
 @media (min-width: 768px) {
 
